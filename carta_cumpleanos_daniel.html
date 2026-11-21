@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10142d">
+<title>Un universo para Daniel ✨</title>
+<style>
+:root{--night:#10142d;--blue:#20294e;--gold:#ffd477;--cream:#fff7e9;--ink:#202747}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Georgia,"Trebuchet MS",sans-serif;color:var(--cream);background:radial-gradient(ellipse at 18% 20%,#35416e 0,transparent 28%),radial-gradient(ellipse at 85% 75%,#34315d 0,transparent 30%),linear-gradient(145deg,#090d20,#171c3a 55%,#0c1025);display:grid;place-items:center;padding:28px 14px;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 10% 20%,#fff 50%,transparent 60%),radial-gradient(2px 2px at 30% 70%,#ffe3a1 50%,transparent 60%),radial-gradient(1.5px 1.5px at 75% 25%,#fff 50%,transparent 60%),radial-gradient(2px 2px at 88% 62%,#ffe3a1 50%,transparent 60%),radial-gradient(1px 1px at 55% 12%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 62% 88%,#fff 50%,transparent 60%);background-size:260px 260px;opacity:.9}
+.wrap{width:min(100%,590px);position:relative}
+.card{position:relative;text-align:center;padding:38px 28px 34px;border:1px solid rgba(255,218,145,.8);border-radius:30px;background:linear-gradient(160deg,rgba(255,250,240,.98),rgba(255,239,217,.97));color:var(--ink);box-shadow:0 0 35px #ffd47755,0 18px 55px #0007;overflow:hidden}
+.card:before,.card:after{content:"✦";position:absolute;color:#eab84d;font-size:30px;opacity:.8}
+.card:before{top:18px;left:22px}.card:after{right:22px;bottom:18px}
+.planet{font-size:66px;line-height:1.2;filter:drop-shadow(0 5px 5px #b28a4c55)}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:11px;color:#98712d;font-weight:bold;margin:10px 0}
+h1{font-size:clamp(34px,8vw,52px);line-height:1.08;margin:12px 0;color:#202747}
+.name{display:inline-block;margin:8px 0 16px;padding:10px 22px;border-radius:30px;background:#f9dfaa;color:#273052;font-size:clamp(20px,5vw,27px)}
+.intro{font-size:18px;line-height:1.55;margin:8px auto 24px;max-width:440px}
+button{border:2px solid #ffdc86;background:linear-gradient(120deg,#202747,#303b68);color:#fff7e9;padding:16px 25px;border-radius:40px;font-size:17px;font-weight:bold;cursor:pointer;box-shadow:0 7px 20px #b88a3850;transition:transform .2s,box-shadow .2s}
+button:hover{transform:translateY(-2px);box-shadow:0 10px 25px #b88a3870}
+button:focus-visible{outline:3px solid #ad7b24;outline-offset:4px}
+.letter{display:none;text-align:left;margin:25px auto 0;padding:23px 22px;border-radius:20px;background:#fffdf8;border:1px solid #efd49c;line-height:1.75;font-size:17px;animation:appear .55s ease both}
+.letter.show{display:block}
+.letter p{margin:0 0 14px}.sign{text-align:right;font-weight:bold;color:#7d5b24}
+.footer{margin-top:20px;font-size:13px;color:#f9dfaa;letter-spacing:1px}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:420px){.card{padding:32px 19px}.intro{font-size:16px}.letter{font-size:16px;padding:19px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <section class="card">
+    <div class="planet" aria-hidden="true">🪐✨</div>
+    <div class="kicker">Un pequeño universo de buenos deseos</div>
+    <h1>¡Feliz cumpleaños!</h1>
+    <div class="name">Daniel Lopez Pérez</div>
+    <p class="intro">Hoy el universo tiene una razón más para brillar. Que tu día esté lleno de momentos increíbles, sonrisas y nuevas aventuras. 🌟</p>
+    <button id="openLetter" type="button" aria-expanded="false" aria-controls="letter">✦ Abrir tu carta especial ✦</button>
+    <article class="letter" id="letter" aria-live="polite">
+      <p>Hoy se celebra a alguien muy especial para mí: tu cumpleaños, el día que nacistes y nacieron todas las flores. Bueno, no sé si digan eso allá también, jaja. Es que ustedes son como medio raros, jeje, pero tú no. Bueno, sí: ser raro es ser especial, y tú lo eres bastante.</p>
+      <p>Eres una persona maravillosa. Tienes defectos y virtudes como toda persona, aunque, a decir verdad, nunca podría ver tus defectos por más que llegues a tener. Eres una persona muy especial para mí, eres maravilloso en todos los aspectos.</p>
+      <p>Pensé mucho en hacer esto por varias razones, pero no importa que no te conozca en persona: te quiero mucho con todo mi corazón. Eres muy especial para mí y, a decir verdad, siempre te amaré en cierto modo y siempre serás importante para mí. No importa la distancia, te quiero mucho como la gran persona que eres y eres tan maravilloso.</p>
+      <p>Por eso hoy, en tu cumpleaños, te deseo la mayor felicidad. Sé que este año, por tu UNI y varias cosas, te ha sido difícil, pero eres tan valiente al seguir adelante y no rendirte por tus sueños. Espero que sigas así siempre.</p>
+      <p class="sign">Con cariño y amor ✨</p>
+    </article>
+    <div class="footer">HECHO CON UN POQUITO DE MAGIA CÓSMICA ✨</div>
+  </section>
+</main>
+<script>
+const button=document.getElementById('openLetter');
+const letter=document.getElementById('letter');
+button.addEventListener('click',()=>{
+  const opening=!letter.classList.contains('show');
+  letter.classList.toggle('show',opening);
+  button.setAttribute('aria-expanded',String(opening));
+  button.textContent=opening?'✦ Cerrar la carta ✦':'✦ Abrir tu carta especial ✦';
+});
+</script>
+</body>
+</html>
